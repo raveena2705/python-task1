@@ -1,0 +1,129 @@
+import pyttsx3
+import os
+
+pyttsx3.speak("hello welcome to my program") 
+pyttsx3.speak("choose one among the operations given below") 
+
+print("\n1.Press 1 to calculate the area of circle")
+print("\n2.Press 2 to calculate the area of square")
+print("\n3.Press 3 to calculate the area of rectangle")
+print("\n4.Press 4 to calculate the area of triangle")
+print("\n5.Press 5 to calculate the total surface area of cube")
+print("\n6.Press 6 to calculate the total surface area of cuboid")
+print("\n7.Press 7 to calculate the total surface area of cylinder")
+print("\n8.Press 8 to calculate the total surface area of cone")
+print("\n9.Press 9 to calculate the total surface area of sphere")
+print("\n10.Press 10 to calculate the total surface area of hemisphere")
+
+while True:
+	print("\n\n Enter your choice:" , end= ' ')
+	p=int(input())
+	
+	if p==1:
+	     pyttsx3.speak("So you want to calculate the area of circle ")
+	     print("enter the radius:")
+	     num = int(input())
+	     Area = 3.14 * num * num
+	     pyttsx3.speak("The required answer is")
+	     print("the required answer is:",Area)
+
+	elif p==2:
+	     pyttsx3.speak("So you want to calculate the area of square ")
+	     print("enter the side of square:")
+	     num = int(input())
+	     Area =  num * num
+	     pyttsx3.speak("The required answer is")
+	     print("the required answer is:",Area)
+
+	elif p==3:
+	     pyttsx3.speak("So you want to calculate the area of rectangle ")
+	     print("enter the length of rectangle:")
+	     l = int(input())
+	     print("enter the breadth of rectangle:")
+	     b = int(input())
+	     Area = l * b
+	     pyttsx3.speak("The required answer is")
+	     print("The required answer is:",Area)
+	    
+
+	elif p==4:
+	     pyttsx3.speak("So you want to calculate the area of triangle ")
+	     print("enter the base :")
+	     b = int(input())
+	     print("enter the height:")
+	     h= int(input())
+	     Area = (b * h)/2
+	     pyttsx3.speak("The required answer is")
+	     print("The required answer is:",Area)
+
+	elif p==5:
+	     pyttsx3.speak("So you want to calculate the total surface area of cube")
+	     print("enter the side of cube :")
+	     num = int(input())
+	     Area =  6 * num * num
+	     pyttsx3.speak("The required answer is")
+	     print("the required answer is:", Area)
+
+	elif p==6:
+	     pyttsx3.speak("So you want to calculate the total surface area of cuboid ")
+	     print("enter the length:")
+	     l = int(input())
+	     print("enter the width:")
+	     b= int(input())
+	     print("enter the height:")
+	     h= int(input())
+	     Area = 2*((l*b)+(b*h)+(h*l))
+	     pyttsx3.speak("The required answer is")
+	     print("the required answer is:", Area)
+
+	elif p==7:
+	     pyttsx3.speak("So you want to calculate the total surface area of cylinder")
+	     print("enter the radius:")
+	     r = int(input())
+	     print("enter the height:")
+	     h= int(input())
+	     Area = 2 * 3.14*r*(r+h)
+	     pyttsx3.speak("The required answer is")
+	     print("the required answer is:",Area)
+
+	elif p==8:
+	     pyttsx3.speak("So you want to calculate the total surface area of cone ")
+	     print("enter the radius:")
+	     r = int(input())
+	     print("enter the length:")
+	     l = int(input())
+	     Area = 3.14 * r *(r+l)
+	     pyttsx3.speak("The required answer is")
+	     print("the required answer is:",Area)
+
+	elif p==9:
+	     pyttsx3.speak("So you want to calculate the total surface area of sphere")
+	     print("enter the radius:")
+	     r = int(input())
+	     Area = 4 * 3.14 * r * r
+	     pyttsx3.speak("The required answer is")
+	     print("the required answer is:",Area)
+	
+	elif p==10:
+	     pyttsx3.speak("So you want to calculate the total surface area of hemisphere")
+	     print("enter the radius:")
+	     r = int(input())
+	     Area = 3 * 3.14 * r * r
+	     pyttsx3.speak("The required answer is")
+	     print("the required answer is:",Area)
+
+	else:
+	     pyttsx3.speak("invalid output")
+	     print("\nInvalid output")
+	
+	     
+	
+   	      
+
+
+ 
+     
+
+
+
+
